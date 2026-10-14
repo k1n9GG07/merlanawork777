@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+}
+
+.btn-secondary {
+  background-color: #60a5fa;
+}
+
+.btn-danger {
+  background-color: #ec4899;
+}

@@ -1,0 +1,84 @@
+.post-card {
+  background: white;
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.comment-count {
+  font-size: 12px;
+  color: #64748b;
+  flex-grow: 1;
+}
+
+.comments-section {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-comment-block {
+  display: flex;
+  gap: 10px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-size: 14px;
+  background: #f0f9ff;
+}
+
+.comment-text {
+  color: #334155;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .post-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .comment-count {
+    text-align: center;
+    margin: 5px 0;
+  }
+  .add-comment-block {
+    flex-direction: column;
+  }
+  .comment-item {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}

@@ -1,0 +1,32 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.create-post-block {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #bae6fd;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+  .create-post-block {
+    flex-direction: column;
+  }
+}
